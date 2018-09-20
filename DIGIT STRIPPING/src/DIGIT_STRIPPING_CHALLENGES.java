@@ -10,8 +10,8 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		public static void main(String[] args)
 			{
-				// challengeOne();
-				challengeTwo();
+			//	challengeOne();
+			//	challengeTwo();
 				challengeThree();
 				challengeFour();
 				challengeFive();
@@ -63,7 +63,11 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		private static void challengeFour()
 			{
-				
+				for (int i = 0; i < numbers.length; i++)
+					{
+						sum = sum + numbers[i];
+					}
+				System.out.println("The sum is " + sum);
 			}
 
 		private static void challengeFive()
