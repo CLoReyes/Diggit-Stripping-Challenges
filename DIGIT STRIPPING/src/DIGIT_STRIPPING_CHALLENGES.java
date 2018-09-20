@@ -10,10 +10,10 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		public static void main(String[] args)
 			{
-			//	challengeOne();
-			//	challengeTwo();
+				challengeOne();
+				challengeTwo();
 				challengeThree();
-			//	challengeFour();
+				challengeFour();
 			//	challengeFive();
 			}
 
