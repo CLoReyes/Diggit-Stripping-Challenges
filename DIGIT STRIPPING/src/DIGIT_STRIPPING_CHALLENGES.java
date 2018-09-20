@@ -13,8 +13,8 @@ public class DIGIT_STRIPPING_CHALLENGES
 			//	challengeOne();
 			//	challengeTwo();
 				challengeThree();
-				challengeFour();
-				challengeFive();
+			//	challengeFour();
+			//	challengeFive();
 			}
 
 		private static void challengeOne()
@@ -58,7 +58,23 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		private static void challengeThree()
 			{
-				
+				int oddNumbers = number;
+				int odd = 0;
+				for (int i = 0; i < numbers.length; i++)
+					{
+						numbers [i] = oddNumbers % 10;
+						oddNumbers = oddNumbers / 10;
+						
+						if (odd == 1)
+						{
+							System.out.println("There is " + odd + " odd number in this list.");
+						}
+						
+						else
+						{
+							System.out.println("There are " + odd + " odd numbers in this list.");
+						}
+					}
 			}
 
 		private static void challengeFour()
