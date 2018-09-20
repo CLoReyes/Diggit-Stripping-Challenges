@@ -64,7 +64,12 @@ public class DIGIT_STRIPPING_CHALLENGES
 					{
 						numbers [i] = oddNumbers % 10;
 						oddNumbers = oddNumbers / 10;
-						
+					
+						if (numbers[i] % 2 == 1)
+						{
+							odd++;
+						}
+					}
 						if (odd == 1)
 						{
 							System.out.println("There is " + odd + " odd number in this list.");
@@ -74,7 +79,7 @@ public class DIGIT_STRIPPING_CHALLENGES
 						{
 							System.out.println("There are " + odd + " odd numbers in this list.");
 						}
-					}
+			
 			}
 
 		private static void challengeFour()
