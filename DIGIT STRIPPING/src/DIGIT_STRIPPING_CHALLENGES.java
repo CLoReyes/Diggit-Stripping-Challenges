@@ -10,10 +10,10 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		public static void main(String[] args)
 			{
-				challengeOne();
+			//	challengeOne();
 				challengeTwo();
 				challengeThree();
-				challengeFour();
+			//	challengeFour();
 			//	challengeFive();
 			}
 
@@ -70,15 +70,16 @@ public class DIGIT_STRIPPING_CHALLENGES
 							odd++;
 						}
 					}
-						if (odd == 1)
-						{
-							System.out.println("There is " + odd + " odd number in this list.");
-						}
+				
+				if (odd == 1)
+					{
+						System.out.println("There is " + odd + " odd number in this list.");
+					}
 						
-						else
-						{
-							System.out.println("There are " + odd + " odd numbers in this list.");
-						}
+				else
+					{
+						System.out.println("There are " + odd + " odd numbers in this list.");
+					}
 			
 			}
 
@@ -93,7 +94,12 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		private static void challengeFive()
 			{
+				int a = number % 10;
 				
+				if (a >= 5)
+					{
+						number = number + (10 - a);
+					}
 			}
 
 	}
