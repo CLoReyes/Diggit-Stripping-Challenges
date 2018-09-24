@@ -10,11 +10,11 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		public static void main(String[] args)
 			{
-			//	challengeOne();
+				challengeOne();
 				challengeTwo();
 				challengeThree();
-			//	challengeFour();
-			//	challengeFive();
+				challengeFour();
+				challengeFive();
 			}
 
 		private static void challengeOne()
@@ -33,7 +33,7 @@ public class DIGIT_STRIPPING_CHALLENGES
 
 		private static void challengeTwo()
 			{
-				System.out.println("Give me any number of random numbers");
+				System.out.println("Give me any number of random numbers, I'll say how many odd ones there are");
 				Scanner userNumbers = new Scanner(System.in);
 				number = userNumbers.nextInt();
 				int numberCount = number;
@@ -47,13 +47,14 @@ public class DIGIT_STRIPPING_CHALLENGES
 				
 				if (counter == 1)
 					{
-						System.out.println("There is " + counter + " number in this list.");
+						System.out.println("There is " + counter + " odd number in this list.");
 						
 					}
 				else
 					{
-						System.out.println("There are " + counter + " numbers in this list.");
+						System.out.println("There are " + counter + " odd numbers in this list.");
 					}
+				numbers = new int[counter];
 			}
 
 		private static void challengeThree()
@@ -99,7 +100,13 @@ public class DIGIT_STRIPPING_CHALLENGES
 				if (a >= 5)
 					{
 						number = number + (10 - a);
+						
 					}
+				else if (a < 5)
+					{
+						number = number / 10;
+					}
+				System.out.println("The average of this number is " + number);
 			}
 
 	}
